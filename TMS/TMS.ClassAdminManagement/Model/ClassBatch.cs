@@ -12,7 +12,8 @@ namespace TMS.ClassAdminManagement.Model
         [StringLength(50)]
         public string ClassCode { get; set; }
 
-        [StringLength(50)]
+        public string GroupMail { get; set; }
+
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
 
@@ -29,7 +30,11 @@ namespace TMS.ClassAdminManagement.Model
         public ICollection<ClassAdmin> ClassAdmins { get; set; }
         public ICollection<Trainer> Trainers { get; set; }
 
+        public int Status { get; set; }
+
         [StringLength(255)]
         public string Remarks { get; set; }
+        public string AuditTrail { get; set; }
+        public bool IsDeleted { get; set; }
     }
 }

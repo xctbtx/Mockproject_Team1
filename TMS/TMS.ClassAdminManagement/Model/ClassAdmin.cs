@@ -19,9 +19,12 @@ namespace TMS.ClassAdminManagement.Model
 
         [StringLength(50)]
         public string Email { get; set; }
+
+        public string Account { get; set; }
+
         [MaxLength(10)]
         public int Status { get; set; }
-        [StringLength(255)]
-        public string Remarks { get; set; }
+        public string AuditTrail { get; set; }
+        public bool IsDeleted { get; set; }
     }
 }
