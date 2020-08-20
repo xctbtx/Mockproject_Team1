@@ -5,7 +5,7 @@ namespace TMS.ClassAdminManagement.Model
 {
     public class ClassAdmin
     {
-        [MaxLength(10)]
+        
         public int ClassAdminId { get; set; }
         
         [StringLength(255)]
@@ -22,7 +22,7 @@ namespace TMS.ClassAdminManagement.Model
 
         public string Account { get; set; }
 
-        [MaxLength(10)]
+        
         public int Status { get; set; }
         public string AuditTrail { get; set; }
         public bool IsDeleted { get; set; }
